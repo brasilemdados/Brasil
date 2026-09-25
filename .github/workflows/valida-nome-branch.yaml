@@ -1,0 +1,40 @@
+name: Validar nome da branch
+
+on:
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  validar_nome_branch:
+    name: validar-nome-branch
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validar padrão da branch
+        env:
+          BRANCH: ${{ github.head_ref }}
+        shell: bash
+        run: |
+          PADRAO='^(funcionalidade|correcao|documentacao|infraestrutura|refatoracao|teste|manutencao)/[a-z0-9]+(-[a-z0-9]+)*$'
+
+          echo "Branch recebida: $BRANCH"
+
+          if [[ ! "$BRANCH" =~ $PADRAO ]]; then
+            echo "::error::Nome de branch inválido: $BRANCH"
+            echo "Use o padrão: <tipo>/<escopo>"
+            echo ""
+            echo "Tipos permitidos:"
+            echo "- funcionalidade"
+            echo "- correcao"
+            echo "- documentacao"
+            echo "- infraestrutura"
+            echo "- refatoracao"
+            echo "- teste"
+            echo "- manutencao"
+            echo ""
+            echo "Exemplo: funcionalidade/ac-populacao"
+            exit 1
+          fi
+
+          echo "Nome da branch válido."
