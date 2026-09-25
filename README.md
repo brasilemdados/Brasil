@@ -4,6 +4,27 @@
 
 O Brasil em Dados não existe para dizer o que pensar sobre o Brasil, existe para tornar mais fácil encontrar os dados necessários para entendê-lo.
 
+## Eixos temáticos
+Esses eixos orientam as perguntas, análises e conjuntos de dados desenvolvidos pelo projeto. O projeto concentra suas análises nos seguintes eixos temáticos:
+
+* Saúde;
+* Educação;
+* Cultura;
+* Moradia;
+* Segurança;
+* Alimentação;
+* Trabalho;
+* Lazer;
+* Transporte;
+* Previdência Social;
+* Assistência aos desamparados;
+* Proteção à maternidade e à infância;
+* Renda Básica Familiar;
+* Meio Ambiente Ecologicamente Equilibrado;
+* Livre Exercício dos Cultos Religiosos;
+* Privacidade Digital e Proteção de Dados;
+* Acesso à Justiça.
+
 ## Princípios
 
 O projeto é orientado por quatro princípios fundamentais.
