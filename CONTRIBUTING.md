@@ -258,6 +258,26 @@ Uma contribuição **não deve** utilizar os dados para defender uma posição p
 
 As contribuições são organizadas internamente por Unidade da Federação (UF), permitindo que cada UF mantenha seu próprio código, configurações e processos de execução sem a necessidade de repositórios separados.
 
+### Linguagem de programação
+
+O Brasil em Dados é agnóstico em relação à linguagem de programação.
+
+Cada Unidade da Federação pode utilizar a linguagem e as tecnologias mais adequadas para suas contribuições, desde que respeite os padrões, princípios e contratos definidos pelo projeto.
+
+O ambiente necessário para executar o código deve estar definido no contêiner da respectiva UF.
+
+O usuário não deve precisar instalar localmente Python, Java, R ou qualquer outra linguagem ou biblioteca utilizada internamente por uma UF.
+
+### Contêineres
+
+Cada Unidade da Federação deve possuir seu próprio `Dockerfile` e ser executada em um contêiner independente.
+
+O contêiner deve conter as dependências necessárias para executar o código daquela UF.
+
+Uma falha em uma Unidade da Federação não deve interromper a execução das demais.
+
+**Os dados não devem fazer parte da imagem do contêiner**. Eles devem permanecer no dispositivo do usuário e ser disponibilizados ao contêiner durante a execução.
+
 ---
 
 # 11. Código em português
