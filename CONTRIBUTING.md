@@ -19,7 +19,7 @@ Antes de contribuir, leia também o `README.md` do projeto.
 - [7. Documente as fontes](#7-documente-as-fontes)
 - [8. Limitações devem ser apresentadas](#8-limitações-devem-ser-apresentadas)
 - [9. Compartilhamos fatos, não juízos de valor](#9-compartilhamos-fatos-não-juízos-de-valor)
-- [10. Organização dos repositórios](#10-organização-dos-repositórios)
+- [10. Organização](#10-organização-dos-repositórios)
 - [11. Código em português](#11-código-em-português)
 - [12. Clareza antes de sofisticação](#12-clareza-antes-de-sofisticação)
 - [13. Pull Requests](#13-pull-requests)
@@ -254,16 +254,9 @@ Uma contribuição **não deve** utilizar os dados para defender uma posição p
 
 ---
 
-# 10. Organização dos repositórios
+# 10. Organização
 
-O Brasil em Dados possui um repositório central, chamado `Brasil`, e um repositório específico para cada Unidade da Federação.
-
-Um processo automatizado é responsável por integrar ao repositório `Brasil` os dados produzidos nos repositórios estaduais e no Distrito Federal.
-
-De forma geral:
-
-* dados específicos de uma Unidade da Federação devem ser adicionados ao repositório correspondente;
-* o repositório `Brasil` funciona como ponto central para consulta e integração dos dados do projeto.
+As contribuições são organizadas internamente por Unidade da Federação (UF), permitindo que cada UF mantenha seu próprio código, configurações e processos de execução sem a necessidade de repositórios separados.
 
 ---
 
