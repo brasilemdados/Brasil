@@ -1,0 +1,5 @@
+/.github/CODEOWNERS @brasilemdados
+/.github/workflows/valida-nome-branch.yaml @brasilemdados
+/LICENSE @brasilemdados
+/README.md @brasilemdados
+/CONTRIBUTING.md @brasilemdados
